@@ -35,6 +35,7 @@ class _SignInScreenState extends State<SignInScreen> {
       setState(() {
         _errorMessage = '';
       });
+      Navigator.pushNamed(context, '/home');
     } else {
       setState(() {
         _errorMessage = 'Email not registered';
